@@ -12,7 +12,7 @@ export const NetflixMovies = () => {
             <h1>NetflixMovies</h1>
             {
                 movies.map((movie) => {
-                    return <li>
+                    return <li key={movie.movieId}>
                         <Link to={`/watch/${movie.movieName}`}>{movie.movieName}</Link>
                     </li>
                 })

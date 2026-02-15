@@ -23,24 +23,36 @@ import { FunctionDemo1 } from "./components/FunctionDemo1";
 import { UseStateDemo2 } from "./components/UseStateDemo2";
 import { UseStateDemo3 } from "./components/UseStateDemo3";
 import { Employees } from "./components/Employees";
+import { InputDemo1 } from "./components/input/InputDemo1";
+import { InputDemo2 } from "./components/input/InputDemo2";
+import { FormDemo1 } from "./components/Form/FormDemo1";
+import { FormDemo2 } from "./components/Form/FormDemo2";
+import { FormDemo3 } from "./components/Form/FormDemo3";
+import { FormDemo4 } from "./components/Form/FormDemo4";
 
 function App() {
   return (
     <div>
       <Navbar></Navbar>
-      
+
       <Routes>
         <Route path="/netflixhome" element={<NetflixHome />}></Route>
         <Route path="/netflixmovies" element={<NetflixMovies />}></Route>
         <Route path="/netflixshows" element={<NetflixShows />}></Route>
-        <Route path="/" element = {<HomeComponent/>}></Route>
-        <Route path="/watch/:name" element = {<Watch/>}></Route>
-        <Route path="/usestatedemo1" element ={<UseStateDemo1/>}></Route>
-        <Route path="/usestatedemo2" element ={<UseStateDemo2/>}></Route>
-        <Route path="/usestatedemo3" element ={<UseStateDemo3/>}></Route>
-        <Route path="/fundemo1" element ={<FunctionDemo1/>}></Route>
-        <Route path="/employees" element={<Employees></Employees>}></Route>
-        <Route path="/*" element = {<ErrorNotFound/>}></Route>
+        <Route path="/" element={<HomeComponent />}></Route>
+        <Route path="/watch/:name" element={<Watch />}></Route>
+        <Route path="/usestatedemo1" element={<UseStateDemo1 />}></Route>
+        <Route path="/usestatedemo2" element={<UseStateDemo2 />}></Route>
+        <Route path="/usestatedemo3" element={<UseStateDemo3 />}></Route>
+        <Route path="/fundemo1"   element={<FunctionDemo1 />}></Route>
+        <Route path="/employees"  element={<Employees></Employees>}></Route>
+        <Route path="/inputdemo1" element={<InputDemo1 />}></Route>
+        <Route path="/inputdemo2" element={<InputDemo2 />}></Route>
+        <Route path="/formdemo1"  element={<FormDemo1 />}></Route>
+        <Route path="/formdemo2" element={<FormDemo2/>}></Route>
+        <Route path="/formdemo3" element={<FormDemo3/>}></Route>
+        <Route path="/formdemo4" element={<FormDemo4/>}></Route>
+        <Route path="/*" element={<ErrorNotFound />}></Route>
       </Routes>
     </div>
   );
